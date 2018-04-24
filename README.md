@@ -1,6 +1,6 @@
 # Proyecto Migrador
 ## Introducción
-### Visualizaciones interactivas (cuadros de mando) a partir de datos públicos sobre la población extranjera que reside en València y la balanza comercial de la ciudad. 
+#### Visualizaciones interactivas (cuadros de mando) a partir de datos públicos sobre la población extranjera que reside en València y la balanza comercial de la ciudad. 
 
 ![Imagen de la página principal del cuadro de mando.](https://github.com/areahackerscivics/Migrador/blob/master/Portada.png)
 
@@ -16,13 +16,19 @@ Desde el equipo de desarrollo del proyecto se entiende que los datos son claros 
 
 Para el cumplimiento de este proyecto se ha usado la plataforma *Asana* para definir las tareas y marcar su cumplimiento. El esquema general ha sido iterativo siguiendo cuatro fases en cada iteracción:
 
-- **Definición del problema**
-- **Identificación de fuentes de datos**
-- **Extracción o solicitud de datos**
-  - **Obtención de los datos**
-  - **Preprocesado de los datos**
-  - **Análisis de los datos**
-- **Construcción cuadro de mando**
+- **Definición del problema.**
+- **Identificación de fuentes de datos.**
+- **Extracción o solicitud de datos.**
+  - **Obtención de los datos.**
+  - **Preprocesado de los datos.**
+  - **Análisis de los datos.**
+- **Construcción del cuadro de mando.**
 
+En total han sido tres iteracciones las que hemos llevado a cabo:
 
+- Busqueda de información sobre población extranjera residiendo en València.
+- Busqueda de información sobre la balanza comercial en València.
+- Agregar información detallada en términos de categorías de productos en la iteracción de balanza comercial.
+
+Finalmente con estas iteracciones completadas se han unido los resultados de todas dando lugar al cuadro de mando final.
 
