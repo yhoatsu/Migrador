@@ -11,3 +11,11 @@ El proyecto recopila los datos disponibles sobre la población extranjera que re
 Estos datos son procesados y publicados a través de una plataforma online donde toda aquella persona interesada podrá navegar por diferentes visualizaciones dinámicas. Así, será posible modificar aquellos parámetros que mejor se ajusten a sus intereses y, de esta forma, ver de un vistazo toda la información actualizada sobre las personas migrantes así como la balanza comercial.
 
 Desde el equipo de desarrollo del proyecto se entiende que los datos son claros y con ellos se pueden desarmar argumentos nacidos desde el miedo o la invención más cruel. A su vez, insisten que “si logramos dar forma a todos estos ítems de manera clara se podrá demostrar cuando alguien use de manera errónea o interesada a las ciudadanas y ciudadanos inmigrantes en València”.
+
+## Metodología
+
+Para el cumplimiento de este proyecto se ha usado la plataforma *Asana* para definir las tareas y marcar su cumplimiento. El esquema general ha sido iterativo siguiendo cuatro fases en cada iteracción:
+
+- Esto es viñeta 1.
+  - Viñeta 1.1 con sangria.
+  - Viñeta N.
