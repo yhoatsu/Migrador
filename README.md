@@ -1,6 +1,6 @@
 # Proyecto Migrador
 ## Introducción
-#### Visualizaciones interactivas (cuadros de mando) a partir de datos públicos sobre la población extranjera que reside en València y la balanza comercial de la ciudad. 
+#### ![Visualizaciones interactivas (cuadros de mando)](https://public.tableau.com/profile/jose.joaquin.rodriguez.garcia#!/vizhome/ProyectoMigrador/CMprincipal) a partir de datos públicos sobre la población extranjera que reside en València y la balanza comercial de la ciudad. 
 
 ![Imagen de la página principal del cuadro de mando.](https://github.com/areahackerscivics/Migrador/blob/master/Portada.png)
 
@@ -66,3 +66,8 @@ El trabajo que contiene este repositorio se ha desarrollado en el [Àrea Hackers
 El [Àrea Hackers cívics](http://civichackers.cc/) ha sido impulsada por la [Cátedra Govern Obert](https://catgo.webs.upv.es/). Una iniciativa surgida de la colaboración entre la Concejalía de Transparencia, Gobierno Abierto y Cooperación del Ayuntamiento de València y la [Universitat Politècnica de València](http://www.upv.es/).
 
 ![Logo Cátedra GO](https://camo.githubusercontent.com/11f08fd44bb2852a7a5f6dcc928004e8078c7369/687474703a2f2f63697669636861636b6572732e776562732e7570762e65732f77702d636f6e74656e742f75706c6f6164732f323031372f30322f4c6f676f5f43474f5f7765622e706e67) ![Logo Hackers Civic](https://camo.githubusercontent.com/9fc719064f2616ebf5989c4f2366d7980a0fbe03/687474703a2f2f63697669636861636b6572732e776562732e7570762e65732f77702d636f6e74656e742f75706c6f6164732f323031372f30322f6c6f676f5f4148435f7765622e706e67)
+
+## Términos de uso
+
+El contenido de este repositorio está sujeto a la licencia [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+![Logo GNU General Public License v3.0](https://camo.githubusercontent.com/0e71b2b50532b8f93538000b46c70a78007d0117/68747470733a2f2f7777772e676e752e6f72672f67726170686963732f67706c76332d3132377835312e706e67)
