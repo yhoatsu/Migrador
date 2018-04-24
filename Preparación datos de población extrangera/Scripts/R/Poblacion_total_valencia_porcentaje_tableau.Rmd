@@ -1,0 +1,84 @@
+---
+title: "Proyecto"
+author: "Jose Joaqu√≠n Rodr√≠guez Garc√≠a"
+date: "15 de diciembre de 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library(readr)
+```
+
+Leemos las tablas con el n√∫mero de personas extrangeras en Valencia por continente de procedencia: 
+
+```{r}
+tabla_pobla_total_2000_2017<-as.data.frame(read_delim("F:/Hacker Civics/Proyecto Migrador/PoblaciÛn extranjera/Datos brutos/Tablas extraidas utiles/poblacion_total_vlc_2000_2017.csv",delim=";"))
+tabla_tableau<-read.table("F:/Hacker Civics/Proyecto Migrador/PoblaciÛn extranjera/Tablas creadas/tabla_paises_regiones_val.csv",sep=";",fileEncoding = "latin1",quote="",header = T)
+```
+
+```{r}
+tabla_pobla_total_2000_2017<-rev(tabla_pobla_total_2000_2017)
+```
+
+
+```{r}
+tabla_tableau$Total<-as.numeric(rep(tabla_pobla_total_2000_2017,each=72))
+```
+
+```{r}
+porcentaje<-by(tabla_tableau$N˙m..total.d.habitants,tabla_tableau$Any,function(x) sum(x,na.rm = T))
+porcentaje<-rep(porcentaje,each=72)
+```
+
+```{r}
+tabla_tableau$porcentaje<-porcentaje/tabla_tableau$Total
+```
+
+
+```{r}
+tabla_tableau$porcentaje<-round(tabla_tableau$porcentaje*100,2)
+```
+
+```{r}
+tabla_tableau$porcentaje_v<-100- tabla_tableau$porcentaje
+```
+
+```{r}
+vector_porcentajes<-matrix(c(tabla_tableau$porcentaje,tabla_tableau$porcentaje_v),nrow=1296,ncol=2,byrow = F)
+```
+
+```{r}
+pares_prop<-vector_porcentajes[seq(1,1296,by=72),]
+```
+
+```{r}
+columna_porcentajes<-NULL
+columna_nombres<-NULL
+for( k in 1:18 ){
+  columna_porcentajes<-cbind(columna_porcentajes,rep(pares_prop[k,],36))
+  columna_nombres<-cbind(columna_nombres,rep(c("ProporciÛ estrangers","ProporciÛ valencians"),36))
+}
+```
+
+```{r}
+tabla_tableau$porcentajes_tableau<-matrix(columna_porcentajes,1296,1)
+tabla_tableau$nombres_tableau<-matrix(columna_nombres,1296,1)
+```
+
+
+
+
+
+
+
+```{r}
+colnames(tabla_tableau)<-c("Any","N˙m. total d'habitants","PaÌs","RegiÛ","Total d'habitants a ValËncia","ProporciÛ d'habitants estrangers")
+```
+
+```{r}
+tabla_tableau$`Total d'habitants a ValËncia`<-as.numeric(tabla_tableau$`Total d'habitants a ValËncia`)
+```
+
+```{r}
+write.csv(tabla_tableau,file="F:/Hacker Civics/Proyecto Migrador/PoblaciÛn extranjera/Tablas creadas/tabla_paises_regiones_pobla_porc_val_tableau.csv",fileEncoding = "latin1",row.names=F)
+```

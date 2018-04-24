@@ -1,0 +1,75 @@
+---
+title: "Creación tablas agencia tributaria bruto y codigos nc para scrapeo"
+author: "Jose Joaquín Rodríguez García"
+date: "14 de marzo de 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(readr)
+library(ff)
+```
+
+```{r}
+tabla<-NULL
+for(k in 0:9){
+  for(i in c(24,38,43,49,67,71,83,85,92,99)){
+    aux<-read.delim(paste0("D:/Hacker Civics/Proyecto Migrador/Importacion/Datos brutos/","tr0",k,"an",i), header = T, sep = " ",colClasses = c("numeric","character","numeric","character","character","character", "character", "numeric", "numeric","numeric","numeric"))
+    aux<-aux[,c(1,2,4,5,6,7,8,10)]
+    names(aux)<-c("Year","Flow","Province","Country","Product","Transport mode","Weight in KG","Value Cents Euro")
+    aux<-subset(aux,Province==46)
+    tabla<-rbind(tabla,aux)
+  }
+}
+```
+
+```{r}
+for(k in 10:16){
+  for(i in c(24,38,43,49,67,71,83,85,92,99)){
+    aux<-read.delim(paste0("D:/Hacker Civics/Proyecto Migrador/Importacion/Datos brutos/","tr",k,"an",i), header = T, sep = " ",colClasses = c("numeric","character","numeric","character","character","character", "character", "numeric", "numeric","numeric","numeric"))
+    aux<-aux[,c(1,2,4,5,6,7,8,10)]
+    names(aux)<-c("Year","Flow","Province","Country","Product","Transport mode","Weight in KG","Value Cents Euro")
+    aux<-subset(aux,Province==46)
+    tabla<-rbind(tabla,aux)
+  }
+}
+```
+
+```{r}
+tabla$Product_cat<-substr(tabla$Product,1,2)
+```
+
+```{r}
+names(tabla)<-c("Flow","Province","Country","Product","Transport mode","Weight in KG","Value Cents Euro","Product category")
+```
+
+```{r}
+rownames(tabla)<-1:nrow(tabla)
+```
+
+```{r}
+countries<-as.character(unique(tabla$Country))
+tabla$Country<-as.character(tabla$Country)
+```
+
+```{r}
+filas_NA<-rownames(tabla[which(is.na(tabla$Country)),])
+tabla[filas_NA,"Country"]<-"NAM"
+```
+
+```{r}
+write.csv(tabla,file="D:/Hacker Civics/Proyecto Migrador/Importacion - Productos/Tablas creadas/tabla_productos_codigo_nc.csv",fileEncoding = "latin1",row.names=F)
+```
+
+```{r}
+numeros<-unique(tabla$Product)
+```
+
+```{r}
+numeros<-data.frame(numeros)
+names(numeros)<-("Product")
+```
+
+```{r}
+write.csv(numeros,file="D:/Hacker Civics/Proyecto Migrador/Importacion - Productos/Tablas creadas/codigo_nc_scrapeo.csv",fileEncoding = "latin1",row.names=F)
+```
