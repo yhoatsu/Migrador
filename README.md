@@ -51,3 +51,18 @@ En este repositorio se encontrará el material necesario para construir desde ce
   - Scripts.
     - R.
   - Tablas creadas.
+
+## Equipo
+
+- Autor:
+  - [Jose Joaquín Rodríguez García](https://www.infojobs.net/josejoaquin-rodriguez-garcia.prf) | @JoseJoaqu1n
+- Director del proyecto:
+  - [Diego Álvarez](https://about.me/diegoalsan) | @diegoalsan
+  
+## Contexto del proyecto
+
+El trabajo que contiene este repositorio se ha desarrollado en el [Àrea Hackers cívics](http://civichackers.cc/). Un espacio de trabajo colaborativo formado por [hackers cívics](http://civichackers.webs.upv.es/conocenos/que-es-una-hacker-civicoa/) que buscamos y creamos soluciones a problemas que impiden que los ciudadanos y ciudadanas podamos influir en los asuntos que nos afectan y, así, construir una sociedad más justa. En definitiva, abordamos aquellos retos que limitan, dificultan o impiden nuestro [empoderamiento](http://civichackers.webs.upv.es/conocenos/una-aproximacion-al-concepto-de-empoderamiento/).
+
+El [Àrea Hackers cívics](http://civichackers.cc/) ha sido impulsada por la [Cátedra Govern Obert](https://catgo.webs.upv.es/). Una iniciativa surgida de la colaboración entre la Concejalía de Transparencia, Gobierno Abierto y Cooperación del Ayuntamiento de València y la [Universitat Politècnica de València](http://www.upv.es/).
+
+[](https://camo.githubusercontent.com/11f08fd44bb2852a7a5f6dcc928004e8078c7369/687474703a2f2f63697669636861636b6572732e776562732e7570762e65732f77702d636f6e74656e742f75706c6f6164732f323031372f30322f4c6f676f5f43474f5f7765622e706e67)[](https://camo.githubusercontent.com/9fc719064f2616ebf5989c4f2366d7980a0fbe03/687474703a2f2f63697669636861636b6572732e776562732e7570762e65732f77702d636f6e74656e742f75706c6f6164732f323031372f30322f6c6f676f5f4148435f7765622e706e67)
