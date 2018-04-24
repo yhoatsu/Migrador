@@ -32,3 +32,17 @@ En total han sido tres iteracciones las que hemos llevado a cabo:
 
 Finalmente con estas iteracciones completadas se han unido los resultados de todas dando lugar al cuadro de mando final.
 
+## Guía de uso
+
+En este repositorio se encontrará el material necesario para construir desde cero el cuadro de mando final. También estarán disponibles las tablas de datos finales por si se desea partir desde ese punto. Aunque en la metodología empleada he mencionado que se han llevado a cabo tres iteraciones, las iteraciones relativas a la balanza comercial han sido puestas en común en la misma carpeta. El esquema de lo que se encontrará en este repositorio es el siguiente:
+
+- **Cuadros de mando con Tableau.**
+  - Tablas finales en formato de *Microsoft Excel*.
+  - Cuadro de mando final realizado usando el Software *Tableau*.
+- **Preparación datos de la balanza comercial.**
+  - Datos en bruto
+  - Scripts
+    - ewer
+- **Preparación datos de población extrangera.**
+
+Dado que 
