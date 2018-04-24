@@ -70,4 +70,5 @@ El [Àrea Hackers cívics](http://civichackers.cc/) ha sido impulsada por la [C�
 ## Términos de uso
 
 El contenido de este repositorio está sujeto a la licencia [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
 ![Logo GNU General Public License v3.0](https://camo.githubusercontent.com/0e71b2b50532b8f93538000b46c70a78007d0117/68747470733a2f2f7777772e676e752e6f72672f67726170686963732f67706c76332d3132377835312e706e67)
