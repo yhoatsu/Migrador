@@ -16,6 +16,13 @@ Desde el equipo de desarrollo del proyecto se entiende que los datos son claros 
 
 Para el cumplimiento de este proyecto se ha usado la plataforma *Asana* para definir las tareas y marcar su cumplimiento. El esquema general ha sido iterativo siguiendo cuatro fases en cada iteracción:
 
-- Esto es viñeta 1.
-  - Viñeta 1.1 con sangria.
-  - Viñeta N.
+- **Definición del problema**
+- **Identificación de fuentes de datos**
+- **Extracción o solicitud de datos**
+  - **Obtención de los datos**
+  - **Preprocesado de los datos**
+  - **Análisis de los datos**
+- **Construcción cuadro de mando**
+
+
+
