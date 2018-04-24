@@ -40,9 +40,14 @@ En este repositorio se encontrará el material necesario para construir desde ce
   - Tablas finales en formato de *Microsoft Excel*.
   - Cuadro de mando final realizado usando el Software *Tableau*.
 - **Preparación datos de la balanza comercial.**
-  - Datos en bruto
-  - Scripts
-    - ewer
+  - Datos en bruto.
+  - Scripts.
+    - R.
+    - Python.
+  - Tablas de reemplazo.
+  - Tablas generadas.
 - **Preparación datos de población extrangera.**
-
-Dado que 
+  - Datos en bruto.
+  - Scripts.
+    - R.
+  - Tablas creadas.
